@@ -4,18 +4,13 @@
 #include <stdlib.h>
 
 int main() {
-    int n,i,sum=0;
-    scanf("%d",&n);
-    for(i=1; i<n; i++){
-        if(n%i==0){
-            sum += i; 
-        }
-    }
-    if(sum==n){
-        printf("yes");
-    }
-    else{
-        printf("no");
+    int T,i;
+    long A,B;
+    scanf("%d",&T);
+    for(i=1; i<=T; i++){
+        scanf("%ld%ld",&A,&B);
+        printf("%ld\n",A+B);
     }
     return 0;
 }
+
